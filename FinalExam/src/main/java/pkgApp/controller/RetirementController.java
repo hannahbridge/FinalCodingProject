@@ -65,10 +65,10 @@ public class RetirementController implements Initializable {
 		// "\\d*?" - means any decimal number
 		// "\\d*(\\.\\d*)?" means any decimal, then optionally a period (.), then
 		// decmial
-		hmTextFieldRegEx.put(txtYearsToWork, "\\d*?");
+		hmTextFieldRegEx.put(txtYearsToWork, "\\d*?" + "^(4[0-0]|1[0-9]|[1-9])$");
 		hmTextFieldRegEx.put(txtAnnualReturnWorking, "\\d*(\\.\\d*)?");
 		
-		hmTextFieldRegEx.put(txtYearsRetired, "\\d*?");
+		hmTextFieldRegEx.put(txtYearsRetired, "\\d*?" + "^(2[0-0]|1[0-9]|[1-9])$");
 		hmTextFieldRegEx.put(txtAnnualReturnRetired, "\\d*(\\.\\d*)?");
 		hmTextFieldRegEx.put(txtRequiredIncome, "\\d*?");
 		hmTextFieldRegEx.put(txtMonthlySSI, "\\d*?" );
