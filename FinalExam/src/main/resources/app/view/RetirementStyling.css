@@ -1,0 +1,23 @@
+.label {
+    -fx-font-family: "Georgia", Times, serif;
+    -fx-font-size: 10pt;
+}
+
+.button {
+	-fx-font-family: "Georgia", Times, serif;
+    -fx-font-size: 12pt;
+    -fx-background-color: #80b3ff;
+    -fx-border-radius: 8px;
+    -fx-transition-duration: 0.3s;
+}
+
+.button:hover {
+		-fx-background-color: #ffffcc;
+}
+
+.root {
+    -fx-background-color: #f2e6ff;
+    -fx-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-width: 6pt;
+}
